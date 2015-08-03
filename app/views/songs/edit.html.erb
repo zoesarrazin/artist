@@ -1,0 +1,17 @@
+<h1>Editing Song #<%= @song.id %></h1>
+
+<form action="/songs/<%= @song.id %>/update">
+  <div>
+    <label for="name">name</label><br />
+    <input id="name" name="name" value="<%= @song.name  %>" type="text" />
+  </div>
+  <div>
+    <label for="artist_id">artist_id</label><br />
+    <input id="artist_id" name="artist_id" value="<%= @song.artist_id  %>" type="text" />
+  </div>
+  <div>
+    <input type="submit">
+  </div>
+</form>
+
+
